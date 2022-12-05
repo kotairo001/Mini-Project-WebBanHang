@@ -17,7 +17,7 @@ menuButton.addEventListener("click", function(){
 
     }
 })
-console.log(arr[0])
+// console.log(arr[0])
 var table = document.getElementById("favourite_list");
 var deleteBtn = document.getElementById("deleteBtn");
 for(i=0;i<arr.length;i++) {
@@ -25,7 +25,6 @@ for(i=0;i<arr.length;i++) {
     var td0 = document.createElement("td");
     var td1 = document.createElement("td");
     var td2 = document.createElement("td");
-    // var td3 = document.createElement("td");
     var img = document.createElement("img");
     var node0 = document.createTextNode(i+1)
     var node1 = document.createTextNode(arr[i].name)

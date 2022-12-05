@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <h2>Login</h2>
-        <form action="">
+        <!-- <form action=""> -->
             <label for="email">Email:</label><br>
                 <input type="email" name="email" id="email" required><br>
                 <div id="alert"></div>
@@ -23,14 +23,19 @@
                 <input type="checkbox" name="" class="showedPassword" onclick="showPassword()">
                 <span>Show password </span><br>
                 <div id="warnMessage"></div>
-        </form>
+        <!-- </form> -->
         <div class="btn">
             <button onclick="checkEmail (),checkLogin ()">Login</button>
         </div>
         <div class="btn">
-            <button id="fogotPws">Forget your password?</button>
+            <button onclick="redirectRegister()" id="fogotPws"> register </button>
         </div>
     </div>
+    <script>
+        function redirectRegister(){
+            window.location.href="Register.html"
+        }
+    </script>
     <script src="/JS/login.js">
     </script>
 </body>
