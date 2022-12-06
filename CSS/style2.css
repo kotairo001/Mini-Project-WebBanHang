@@ -87,9 +87,7 @@ button {
 }
 .main__photo img {
     display: flex;
-    /* width: 1046px; */
     margin: 0 auto;
-    /* padding: 0; */
     padding-top: 110px;
     width: 70%;
 }
@@ -97,15 +95,19 @@ button {
     width: 100%;
     margin-bottom: 20px;
 }
+.favourite-container p {
+    color: rgb(170,135,142);
+    font-weight: 500;
+}
 #deleteBtn {
     margin-bottom: 20px;
-    margin-left: 670px;
+    margin-left:750px;
     width: 200px;
     height: 50px;
 }
 #buyAllbtn {
     margin-bottom: 20px;
-    margin-left: 670px;
+    margin-left: 750px;
     width: 200px;
     height: 50px;
 }
@@ -114,7 +116,6 @@ button {
     font-size: 40px;
 }
 #order_list {
-    /* margin-left: 500px; */
     width: 60%;
     margin: auto;
     background-color: rgb(213,169,179);

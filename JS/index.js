@@ -70,11 +70,12 @@ for (i = 0; i < arrloginAccount.length; i++) {
     if (arrloginAccount != null && arrloginAccount[i].status == true) {
         for (let i = 0; i < favBtn.length; i++) {
             favBtn[i].addEventListener("click", function () {
-            let favourite = new Favorite(contentImg[i].src, productContain[i].innerHTML, false);
-            arrProduct.push(favourite);
-            localStorage.setItem("favourite", JSON.stringify(arrProduct));
-            alert("You have added " + (count += 1) + " product(s) to favourite")
-                // favourite.status = true
+                let favourite = new Favorite(contentImg[i].src, productContain[i].innerHTML, false);
+                arrProduct.push(favourite);
+                localStorage.setItem("favourite", JSON.stringify(arrProduct));
+                alert("You have added " + (count += 1) + " product(s) to favourite")
+                // favBtn[i].innerHTML = "Favourite " + "&#10004"
+                favBtn[i].style.backgroundColor = "rgb(170,135,142)"
             })
         }
     } else {
@@ -91,8 +92,11 @@ for (i = 0; i < arrloginAccount.length; i++) {
                 let cartProduct = new Cart(contentImg[i].src, productContain[i].innerHTML, arrPrice[i]);
                 arrToCart.push(cartProduct);
                 localStorage.setItem("cart", JSON.stringify(arrToCart));
-                alert("You have added " + (count1 += 1) + " product(s) to cart");})
-    }} else {
+                alert("You have added " + (count1 += 1) + " product(s) to cart");
+                cartBtn[i].style.backgroundColor = "rgb(170,135,142)"
+            })
+        }
+    } else {
         alert("You have to login!")
     }
 }
