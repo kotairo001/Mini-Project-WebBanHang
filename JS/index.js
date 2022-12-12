@@ -65,7 +65,6 @@ let Cart = function (img, name, price) {
 
 }
 let count = 0
-
 for (i = 0; i < arrloginAccount.length; i++) {
     if (arrloginAccount != null && arrloginAccount[i].status == true) {
         for (let i = 0; i < favBtn.length; i++) {
