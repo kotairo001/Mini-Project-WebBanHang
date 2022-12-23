@@ -5,10 +5,12 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(/img/background.webp);
+    background-image: url(/img/background_loginAd.webp);
     color: whitesmoke;
     line-height: 2;
     font-size: 22px;
+    background-repeat: no-repeat;
+    background-size: cover ;
 
 }
 .container {
@@ -17,7 +19,7 @@ body {
     margin: auto;
     padding: auto;
     margin-top: 100px;
-    background-color: rgb(170,135,142);
+    background-color: 	#689872;
     padding: 15px;
     font-weight: 500;
 }

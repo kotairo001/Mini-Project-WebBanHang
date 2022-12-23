@@ -91,31 +91,19 @@ button {
     padding-top: 110px;
     width: 70%;
 }
-.favourite-container {
+.cart-detail {
+    margin-top: 20px;
     width: 100%;
     margin-bottom: 20px;
 }
-.favourite-container p {
+.cart-detail p {
     color: rgb(170,135,142);
     font-weight: 500;
-}
-#deleteBtn {
-    margin-bottom: 20px;
-    margin-left:750px;
-    width: 200px;
-    height: 50px;
-}
-#buyAllbtn {
-    margin-bottom: 20px;
-    margin-left: 750px;
-    width: 200px;
-    height: 50px;
-}
-.favourite-container p {
     text-align: center;
     font-size: 40px;
 }
 #order_list {
+    margin-top: 20px;
     width: 60%;
     margin: auto;
     background-color: rgb(213,169,179);
@@ -126,6 +114,19 @@ button {
 table tr th {border: 1px solid black;}
 table tr td {
     border: 1px solid black;
+}
+#order_list img{
+    width: 140px;
+}
+#order_list button {
+    width: 30px;
+    border-radius: 20px;
+    border-color: rgb(148, 118, 124);
+}
+#orderBtn button {
+    width: 100px;
+    border-radius: 0;
+
 }
 #sidebar {
     background-color: rgb(106, 138, 169);
@@ -165,7 +166,21 @@ table tr td {
     width: 150px;
     border: 5px double black;
 }
-
+.invoice {
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+}
+.invoice__text {
+    font-size: 30px;
+    color: rgb(170,135,142);
+}
+.invoice__text span {
+    font-weight: 700;
+}
+.invoice__img img{
+    width: 100px;
+}
 footer {
     padding-top: 10px;
     text-align: center;

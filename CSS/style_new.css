@@ -13,11 +13,6 @@ body {
 .container {
   width: 1440px;
   padding-left: 15px;
-  background-image: linear-gradient(
-    190.45deg,
-    rgba(255, 0, 0, 0.11) 0.38%,
-    rgba(255, 255, 255, 0) 96.55%
-  );
 }
 a {
   text-decoration: none;
@@ -39,44 +34,43 @@ button {
 }
 .navbar {
   width: 100%;
-  height: 106px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 0 110px;
-  background-color: #d26262;
+  background-color: rgb(241, 198, 208);
+  color: rgb(170, 135, 142);
   position: fixed;
   z-index: 99 !important;
   border-bottom: 1px solid rgb(255, 245, 245);
+  height: 100px;
+  /* position: relative; */
 }
 
 .navbar__logo {
-  width: 272px;
-  height: 80px;
+  width: 200px;
   display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 700;
+  font-size: 25px;
+  width: 30%;
 }
 
 .navbar__logo img {
   width: 80px;
 }
-.navbar__logo--title {
-  width: 174px;
-  height: 50px;
-  font-size: 18px;
-  line-height: 22px;
-  margin-left: 18px;
-  margin-top: 18px;
-}
-.navbar__logo--title p {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 13px;
-}
-.navbar__logo--title a:first-child {
-  font-weight: 700;
+.navbar__logo a {
+  text-decoration: none;
+  color: rgb(170, 135, 142);
 }
 
+.navbar__menu ul {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
 .navbar__feature img {
   width: 20px;
 }
@@ -86,25 +80,12 @@ button {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  margin-left: 265px;
 }
-.navbar__button {
-  border: none;
-  background-color: transparent;
-  font-weight: 600;
-  font-size: 18px;
-  width: 95px;
-  height: 24px;
-}
-#signUpBtn {
-  background: #17acac;
-  border-radius: 10px;
-  width: 100px;
-  height: 50px;
-}
+
 #main__photo {
   width: 100%;
   /* border-bottom: 2px solid #F3F3F3; */
+  background-color: rgb(255, 245, 245);
   padding-bottom: 10px;
 }
 .main__photo img {
@@ -113,7 +94,7 @@ button {
   margin: 0 auto;
   /* padding: 0; */
   padding-top: 110px;
-  width: 100%;
+  width: 70%;
 }
 
 #sidebar {
@@ -176,23 +157,8 @@ button {
   margin: 5px 10px;
   line-height: 2;
 }
-
-.content__title {
-  width: 200px;
-  height: 60px;
-  margin-top: 65px;
-  margin-bottom: 33px;
-  background-color: #e37575;
-  color: white;
-  margin-left: 630px;
-  border-radius: 10px;
-}
-.content__title p {
-  padding: 10px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 44px;
+#content {
+  border-bottom: 2px solid #f3f3f3;
 }
 #content__top {
   display: flex;
@@ -225,8 +191,8 @@ button {
   margin-left: 10px;
   margin-bottom: 5px;
   font-size: 15px;
-  background-color: #d26262;
-  border-color: rgb(255, 255, 255);
+  background-color: rgb(213, 169, 179);
+  border-color: rgb(228, 202, 207);
 }
 .content-btn {
   display: flex;
@@ -255,18 +221,18 @@ button {
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   /* animation-name: animatetop;
-    animation-duration: 0.4s; */
+  animation-duration: 0.4s; */
 }
 /* @keyframes animatetop {
-    from {
-      bottom: 0px;
-      opacity: 0;
-    }
-    to {
-      bottom: 10px;
-      opacity: 5;
-    }
-  } */
+  from {
+    bottom: 0px;
+    opacity: 0;
+  }
+  to {
+    bottom: 10px;
+    opacity: 5;
+  }
+} */
 
 .content__popup--img {
   width: 30%;
@@ -287,25 +253,12 @@ button {
   width: 100%;
   /* margin-left: 20px; */
 }
-.ourTeam__title {
-  width: 200px;
-  height: 50px;
-  margin-left: 630px;
-  background-color: #e37575;
-  color: white;
-  border-radius: 10px;
-  text-align: center;
-  padding-top: 5px;
-
-}
-/* .ourTean__top--left {
-} */
 footer {
   padding-top: 10px;
   text-align: center;
   width: 100%;
   height: 300px;
-  background-color: #990000;
+  background-color: rgb(255, 245, 245);
 }
 .footer__title {
   width: 100%;
